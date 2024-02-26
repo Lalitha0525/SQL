@@ -1,0 +1,30 @@
+-- creating a database
+CREATE DATABASE sys; 
+-- using the database
+USE sys;
+-- creating a table named as employee
+CREATE TABLE employee(
+-- giving columns
+emp_id int primary key,
+ename varchar(30),
+jobdesc varchar(20),
+salary int
+);
+-- to view the table
+DESCRIBE TABLE employee;
+-- now inserting the values
+INSERT INTO employee VALUES(1,"ram","admin",1000000);
+INSERT INTO employee VALUES(2,"harini","manager",2500000);
+INSERT INTO employee VALUES(3,"george","sales",200000);
+INSERT INTO employee VALUES(4,"ramya","sales",130000);
+INSERT INTO employee VALUES(5,"meena","HR",200000);
+INSERT INTO employee VALUES(6,"ashok","manager",300000);
+INSERT INTO employee VALUES(7,"abdul","HR",200000);
+INSERT INTO employee VALUES(8,"ramya","engineer",100000);
+INSERT INTO employee VALUES(9,"raghu","CEO",800000);
+INSERT INTO employee VALUES(10,"arvind","manager",280000);
+INSERT INTO employee VALUES(11,"akshay","engineer",100000);
+INSERT INTO employee VALUES(12,"john","admin",220000);
+INSERT INTO employee VALUES(13,"abinava","engineer",210000);
+-- viewing the entire table
+SELECT * FROM employee;
